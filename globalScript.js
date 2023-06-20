@@ -1,5 +1,4 @@
 // question 1 start
-
 const todaysDate = document.getElementById("todaysDate");
 function getDayOfWeek(dateString) {
   const daysOfWeek = [
@@ -16,15 +15,13 @@ function getDayOfWeek(dateString) {
   return daysOfWeek[dayOfWeekIndex];
 }
 
-const currentDate = new Date().toISOString().slice(0, 10); // Get current date in "YYYY-MM-DD" format
+const currentDate = new Date().toISOString().slice(0, 10);
 const dayOfWeek = getDayOfWeek(currentDate);
 todaysDate.innerHTML = "Today is " + dayOfWeek;
-
 // question 1 end
 
 // question 2 start
 const squareRootNumbers = document.getElementById("squareRootNumbers");
-
 function calculateSquareRootSum(numbers) {
   var sumOfSquares = 0;
   for (var i = 0; i < numbers.length; i++) {
@@ -36,7 +33,6 @@ function calculateSquareRootSum(numbers) {
 var numbers = [2, 3, 4, 5];
 var result = calculateSquareRootSum(numbers);
 squareRootNumbers.innerHTML = "Square root of the sum of squares: " + result;
-
 // question 2 end
 
 // problem 3 check integer or not start
@@ -67,7 +63,6 @@ openNewTabButton.addEventListener("click", function () {
     "width=" + 800 + ", height=" + 600
   );
 });
-
 // problem 4 openwindow end
 
 // problem 5 browser info start
@@ -82,7 +77,6 @@ function getBrowserInfo() {
 }
 
 getBrowserInfo();
-
 // problem 5 browser info end
 
 // problem 6 Geolocation start
@@ -101,7 +95,6 @@ function showPosition(position) {
 }
 
 getUserLocation();
-
 // problem 6 Geolocation end
 
 // problem 7 solution start
@@ -125,7 +118,6 @@ const changeImageProblemSeven = document.getElementById(
 changeImageProblemSeven.addEventListener("mouseover", function () {
   changeImageProblemSeven.src = "/images/coderImage2.jpg";
 });
-
 // problem 7 soludtion end
 
 // change text by click on the button problem 8, start
@@ -178,24 +170,15 @@ function submitFormHandler(e) {
 submitFormButton.addEventListener("click", submitFormHandler);
 // form submiting problem solving end, problem 9
 
-// change image function start
-const changeImageButton = document.getElementById("changeImgButton");
-let currentImage = 1;
-changeImageButton.addEventListener("click", function () {
-  const willChangeImage = document.getElementById("willChangeImage");
-  willChangeImage.src = "/images/coderImage2.jpg";
-
-  if (currentImage === 0) {
-    willChangeImage.src = "/images/coderImage1.jpg";
-    currentImage = 1;
-  } else {
-    willChangeImage.src = "/images/coderImage2.jpg";
-    currentImage = 0;
-  }
+// change p element background by click start : que no 10;
+const changeBgTextButton = document.getElementById("changeBgTextButton");
+const changeBgYellow = document.getElementById("changeBgYellow");
+changeBgTextButton.addEventListener("click", function () {
+  changeBgYellow.classList.add("highlight");
 });
-// change image function end
+// change p element background by click, end  : qus no 10;
 
-// add to list function start
+// add to list function start problem 11
 const addToListButton = document.getElementById("addToListButton");
 const listInput = document.getElementById("listInput");
 const ulList = document.getElementById("ulList");
@@ -211,12 +194,21 @@ addToListButton.addEventListener("click", function () {
   ulList.appendChild(createListItem);
   listInput.value = "";
 });
-// add to list function end
+// add to list function end problem 11
 
-// change p element background by click start : que no 10;
-const changeBgTextButton = document.getElementById("changeBgTextButton");
-const changeBgYellow = document.getElementById("changeBgYellow");
-changeBgTextButton.addEventListener("click", function () {
-  changeBgYellow.classList.add("highlight");
+// change image function start problem 12
+const changeImageButton = document.getElementById("changeImgButton");
+let currentImage = 1;
+changeImageButton.addEventListener("click", function () {
+  const willChangeImage = document.getElementById("willChangeImage");
+  willChangeImage.src = "/images/coderImage2.jpg";
+
+  if (currentImage === 0) {
+    willChangeImage.src = "/images/coderImage1.jpg";
+    currentImage = 1;
+  } else {
+    willChangeImage.src = "/images/coderImage2.jpg";
+    currentImage = 0;
+  }
 });
-// change p element background by click, end  : qus no 10;
+// change image function end problem 12

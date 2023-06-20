@@ -1,3 +1,5 @@
+// problem 13 start
+
 function changeTextToRed() {
   var paragraphsClasses = document.getElementsByClassName("paragraphClass1");
   var paragraphsIds = document.getElementById("paragraphID1");
@@ -9,3 +11,5 @@ function changeTextToRed() {
 }
 
 changeTextToRed();
+
+// problem 13 end
