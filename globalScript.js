@@ -1,3 +1,20 @@
+// question 2 start
+const squareRootNumbers = document.getElementById("squareRootNumbers");
+
+function calculateSquareRootSum(numbers) {
+  var sumOfSquares = 0;
+  for (var i = 0; i < numbers.length; i++) {
+    sumOfSquares += Math.pow(numbers[i], 2);
+  }
+  return Math.sqrt(sumOfSquares);
+}
+
+var numbers = [2, 3, 4, 5];
+var result = calculateSquareRootSum(numbers);
+squareRootNumbers.innerHTML = "Square root of the sum of squares: " + result;
+
+// question 2 end
+
 // problem 3 check integer or not start
 function isPrimeNumber(number) {
   if (number <= 1) {
