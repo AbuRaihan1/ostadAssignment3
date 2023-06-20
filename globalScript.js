@@ -1,5 +1,16 @@
-// problem 5 browser info start
+// problem 4 openwindow start
+const openNewTabButton = document.getElementById("openNewTabButton");
+openNewTabButton.addEventListener("click", function () {
+  window.open(
+    "https://www.example.com",
+    "_blank",
+    "width=" + 800 + ", height=" + 600
+  );
+});
 
+// problem 4 openwindow end
+
+// problem 5 browser info start
 function getBrowserInfo() {
   const browserNameElem = document.getElementById("browserName");
   const browserVersionElem = document.getElementById("browserVersion");
