@@ -212,3 +212,5 @@ changeImageButton.addEventListener("click", function () {
   }
 });
 // change image function end problem 12
+
+// problem 12, 13, 14, 15 is another file
