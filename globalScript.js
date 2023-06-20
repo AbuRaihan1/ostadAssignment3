@@ -17,8 +17,6 @@ changeImageButton.addEventListener("click", function () {
 
 // change image function end
 
-
-
 // add to list function start
 const addToListButton = document.getElementById("addToListButton");
 const listInput = document.getElementById("listInput");
@@ -36,3 +34,12 @@ addToListButton.addEventListener("click", function () {
   listInput.value = "";
 });
 // add to list function end
+
+// change p element background by click start : que no 10;
+
+const changeBgTextButton = document.getElementById("changeBgTextButton");
+const changeBgYellow = document.getElementById("changeBgYellow");
+changeBgTextButton.addEventListener("click", function () {
+  changeBgYellow.classList.add("highlight");
+});
+// change p element background by click, end  : qus no 10;

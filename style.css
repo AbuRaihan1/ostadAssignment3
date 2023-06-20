@@ -44,3 +44,9 @@ input {
   margin-bottom: 10px;
   width: 300px;
 }
+
+.highlight {
+  font-weight: bold;
+  background: yellow;
+  padding: 10px;
+}
