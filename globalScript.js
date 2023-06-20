@@ -1,5 +1,13 @@
-// form submiting problem solving start, problem 9
+// change text by click on the button problem 8, start
+const changeTextButton = document.getElementById("changeTextButton");
+const changeTextElement = document.getElementById("changeTextElement");
 
+changeTextButton.addEventListener("click", function () {
+  changeTextElement.textContent = "Button Clicked!";
+});
+// change text by click on the button problem 8, end
+
+// form submiting problem solving start, problem 9
 const submitFormButton = document.getElementById("submitFormButton");
 
 function submitFormHandler(e) {
