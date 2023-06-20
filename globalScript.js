@@ -6,12 +6,12 @@ changeImageButton.addEventListener("click", function () {
   const willChangeImage = document.getElementById("willChangeImage");
   willChangeImage.src = "/images/coderImage2.jpg";
 
-  if (currentImage === 1) {
+  if (currentImage === 0) {
     willChangeImage.src = "/images/coderImage1.jpg";
-    currentImage = 2;
+    currentImage = 1;
   } else {
     willChangeImage.src = "/images/coderImage2.jpg";
-    currentImage = 1;
+    currentImage = 0;
   }
 });
 
