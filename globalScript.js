@@ -1,3 +1,19 @@
+// problem 5 browser info start
+
+function getBrowserInfo() {
+  const browserNameElem = document.getElementById("browserName");
+  const browserVersionElem = document.getElementById("browserVersion");
+  const browserName = navigator.userAgent;
+  const browserVersion = navigator.appVersion;
+
+  browserNameElem.innerHTML = `Browser Name : ${browserName}`;
+  browserVersionElem.innerHTML = `Browser Version : ${browserVersion}`;
+}
+
+getBrowserInfo();
+
+// problem 5 browser info end
+
 // problem 6 Geolocation start
 function getUserLocation() {
   navigator.geolocation.getCurrentPosition(showPosition);
