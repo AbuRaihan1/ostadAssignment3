@@ -21,3 +21,18 @@ p {
   border-radius: 10px;
   margin-top: 20px;
 }
+
+.questionWrapper h2 {
+  text-align: center;
+  display: block;
+  width: 200px;
+  margin: auto;
+  margin-bottom: 10px;
+  border-bottom: 2px solid lightgray;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
