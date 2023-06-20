@@ -1,3 +1,22 @@
+// problem 6 Geolocation start
+function getUserLocation() {
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
+
+function showPosition(position) {
+  const latitudeElem = document.getElementById("latitude");
+  const longitudeElem = document.getElementById("longitude");
+
+  const latitude = position.coords.latitude;
+  const longitude = position.coords.longitude;
+  latitudeElem.textContent = `Latitude : ${latitude}`;
+  longitudeElem.textContent = `Longitude : ${longitude}`;
+}
+
+getUserLocation();
+
+// problem 6 Geolocation end
+
 // problem 7 solution start
 // a. Alert with coordinates (x, y) on click
 document.addEventListener("click", function (e) {
