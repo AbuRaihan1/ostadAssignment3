@@ -1,3 +1,22 @@
+// problem 3 check integer or not start
+function isPrimeNumber(number) {
+  if (number <= 1) {
+    return false;
+  }
+
+  for (let i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(isPrimeNumber(17));
+console.log(isPrimeNumber(10));
+
+// problem 3 check integer or not end
+
 // problem 4 openwindow start
 const openNewTabButton = document.getElementById("openNewTabButton");
 openNewTabButton.addEventListener("click", function () {
