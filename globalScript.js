@@ -1,3 +1,27 @@
+// question 1 start
+
+const todaysDate = document.getElementById("todaysDate");
+function getDayOfWeek(dateString) {
+  const daysOfWeek = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const date = new Date(dateString);
+  const dayOfWeekIndex = date.getDay();
+  return daysOfWeek[dayOfWeekIndex];
+}
+
+const currentDate = new Date().toISOString().slice(0, 10); // Get current date in "YYYY-MM-DD" format
+const dayOfWeek = getDayOfWeek(currentDate);
+todaysDate.innerHTML = "Today is " + dayOfWeek;
+
+// question 1 end
+
 // question 2 start
 const squareRootNumbers = document.getElementById("squareRootNumbers");
 
