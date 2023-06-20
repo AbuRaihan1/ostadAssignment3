@@ -1,3 +1,27 @@
+// problem 7 solution start
+// a. Alert with coordinates (x, y) on click
+document.addEventListener("click", function (e) {
+  const x = e.clientX;
+  const y = e.clientY;
+  alert("Clicked at coordinates (x, y): " + x + ", " + y);
+});
+
+// b. Alert with key code on key press
+document.addEventListener("keydown", function (e) {
+  const keyCode = e.keyCode || e.which;
+  alert("Key pressed. Key code: " + keyCode);
+});
+
+// c. Change image source on mouseover
+const changeImageProblemSeven = document.getElementById(
+  "changeImageProblemSeven"
+);
+changeImageProblemSeven.addEventListener("mouseover", function () {
+  changeImageProblemSeven.src = "/images/coderImage2.jpg";
+});
+
+// problem 7 soludtion end
+
 // change text by click on the button problem 8, start
 const changeTextButton = document.getElementById("changeTextButton");
 const changeTextElement = document.getElementById("changeTextElement");
